@@ -6,4 +6,40 @@
     background-repeat: no-repeat;
     aspect-ratio: 1920 / 1080;
   }
+
+  .description {
+    font-size: 20pt;
+    max-width: 63ch;
+    font-family: "Oswald ExtraLight";
+    color:white;
+    margin-left:32%;
+
+  }
+
+  .parrafo-con-vineta::before {
+    content: "•"; /* Puedes cambiar • por cualquier otro símbolo de viñeta que desees */
+    color: #0BC5BB; /* Color de la viñeta */
+    font-weight: bold; /* Opcional: hacer que la viñeta sea más visible */
+    margin-right: 8px; /* Espacio entre la viñeta y el texto del párrafo */
+  }
+
+  .linea-horizontal {
+    border-top: 3px solid #0bc5bb; /* Color 0BC5BB */
+    position: relative; /* Para posicionar el botón */
+    width: 100%;
+  }
+
+  .title--dark {
+    color: white;
+    font-size: 30pt;
+    padding: 20px;
+    margin-left:30%;
+
+  }
+
+  .title--light {
+    color: #0bc5bb;
+    font-size: 30pt;
+
+  }
 }

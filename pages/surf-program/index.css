@@ -26,6 +26,16 @@
 
   }
 
+  .footer__email--bold {
+    color: #0BC5BB;
+  }
+
+  .parrafo-con-vineta::before {
+    content: "•"; /* Puedes cambiar • por cualquier otro símbolo de viñeta que desees */
+    color: #0BC5BB; /* Color de la viñeta */
+    font-weight: bold; /* Opcional: hacer que la viñeta sea más visible */
+    margin-right: 8px; /* Espacio entre la viñeta y el texto del párrafo */
+  }
   .destitle {
     
     text-align: center;
