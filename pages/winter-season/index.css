@@ -12,7 +12,6 @@
     max-width: 63ch;
     font-family: "Oswald ExtraLight";
     color:white;
-    margin-left:32%;
 
   }
 
@@ -33,7 +32,6 @@
     color: white;
     font-size: 30pt;
     padding: 20px;
-    margin-left:30%;
 
   }
 
@@ -41,5 +39,14 @@
     color: #0bc5bb;
     font-size: 30pt;
 
+  }
+
+  .vertical-image {
+    aspect-ratio: 1500 / 1900; /* Relación de aspecto 1500x1920 (ancho x alto) */
+    max-width: none; /* Elimina la restricción de ancho máximo */
+    height: auto; /* Ajusta automáticamente la altura en función de la relación de aspecto */
+    background-repeat: no-repeat; /* Evita la repetición de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo al tamaño de la sección */
+    background-position: right center; /* Centra la imagen de fondo horizontal y verticalmente */
   }
 }
