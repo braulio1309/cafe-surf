@@ -1,9 +1,68 @@
 .surf-program {
   .banner {
-    background-image: url('../../assets/webp/surf-program__banner-background.webp');
+    background-image: url("../../assets/webp/surf-program__banner-background.webp");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     aspect-ratio: 1920 / 1080;
   }
+
+  .title--dark {
+    color: #05386b;
+    font-size: 15pt;
+    padding: 20px;
+  }
+
+  .title--light {
+    color: #0bc5bb;
+    font-size: 15pt;
+  }
+
+  .description {
+    font-size: 20pt;
+    max-width: 63ch;
+    font-family: "Oswald ExtraLight";
+    padding: 20px;
+
+  }
+
+  .destitle {
+    
+    text-align: center;
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 15pt;
+    padding: 20px;
+  }
+
+  .read {
+    text-align: right;
+  }
+
+  .linea-horizontal {
+    border-top: 3px solid #0bc5bb; /* Color 0BC5BB */
+    position: relative; /* Para posicionar el botón */
+  }
+
+  /* Estilos para el botón */
+  .boton-sobresaliente {
+    position: absolute;
+    top: -20px; /* Distancia desde la línea horizontal hacia arriba */
+    left: 50%; /* Centra el botón horizontalmente */
+    transform: translateX(-50%); /* Centra completamente el botón */
+    background-color: #0bc5bb; /* Color 0BC5BB */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .container {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+
 }
