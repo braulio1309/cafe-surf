@@ -1,6 +1,6 @@
 .winter-season {
   .banner {
-    background-image: url('../../assets/webp/winter-season__banner-background.webp');
+    background-image: url("../../assets/webp/winter-season__banner-background.webp");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,13 +11,12 @@
     font-size: 20pt;
     max-width: 63ch;
     font-family: "Oswald ExtraLight";
-    color:white;
-
+    color: white;
   }
 
   .parrafo-con-vineta::before {
     content: "•"; /* Puedes cambiar • por cualquier otro símbolo de viñeta que desees */
-    color: #0BC5BB; /* Color de la viñeta */
+    color: #0bc5bb; /* Color de la viñeta */
     font-weight: bold; /* Opcional: hacer que la viñeta sea más visible */
     margin-right: 8px; /* Espacio entre la viñeta y el texto del párrafo */
   }
@@ -32,21 +31,43 @@
     color: white;
     font-size: 30pt;
     padding: 20px;
-
   }
 
   .title--light {
     color: #0bc5bb;
     font-size: 30pt;
-
   }
 
   .vertical-image {
-    aspect-ratio: 1500 / 1900; /* Relación de aspecto 1500x1920 (ancho x alto) */
+    aspect-ratio: 1500 / 1800; /* Relación de aspecto 1500x1920 (ancho x alto) */
     max-width: none; /* Elimina la restricción de ancho máximo */
     height: auto; /* Ajusta automáticamente la altura en función de la relación de aspecto */
     background-repeat: no-repeat; /* Evita la repetición de fondo */
     background-size: cover; /* Ajusta la imagen de fondo al tamaño de la sección */
     background-position: right center; /* Centra la imagen de fondo horizontal y verticalmente */
+    margin-right: -20px;
+  }
+
+  .square {
+    width: 300px; /* Ancho deseado */
+    height: 300px; /* Alto deseado */
+    border: 5px solid #05386b; /* Borde grueso del mismo color */
+    color: #05386b; /* Color del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 75px; /* Centra el texto verticalmente */
+    display: inline-block;
+    margin-right: -5px;
+    padding: 15px;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+  }
+
+  .square:hover {
+    background-color: #05386b; /* Color de fondo en hover */
+    color: #0bc5bb; /* Color del texto en hover */
+  }
+
+  .active {
+    background-color: #05386b !important; /* Color de fondo en hover */
+    color: #0bc5bb !important; /* Color del texto en hover */
   }
 }

@@ -75,4 +75,37 @@
     display: block;
   }
 
+  .banner {
+    display: flex;
+    align-items: center;
+    background-image: url('../../assets/webp/home__banner.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    aspect-ratio: 1920 / 872.0386;
+    padding: 2rem min(16.197rem, 13.4974%);
+    justify-content: center;
+  }
+  .banner__title {
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    line-height: 100%;
+    font-family: 'Akzidenz-grotesk-light';
+    color: #FFFFFF;
+    text-align: center; /* Centra el texto horizontalmente */
+
+    @media screen and (min-width: 64rem) {
+      font-size: 117.0937pt;
+      line-height: 99.5889pt;
+    }
+  }
+  .banner__word {
+    font-weight: 400;
+
+    &:nth-child(odd) {
+      font-weight: 900;
+    }
+  }
+
 }
