@@ -19,10 +19,13 @@
   }
 
   .description {
-    font-size: 20pt;
-    max-width: 63ch;
+    max-width: calc(63ch + 32pt);
     font-family: "Oswald ExtraLight";
-    padding: 20px;
+    padding: 1.25rem;
+
+    @media screen and (min-width: 64rem) {
+      font-size: 16pt;
+    }
 
   }
 
@@ -31,13 +34,16 @@
   }
 
   .parrafo-con-vineta::before {
-    content: "•"; /* Puedes cambiar • por cualquier otro símbolo de viñeta que desees */
-    color: #0BC5BB; /* Color de la viñeta */
-    font-weight: bold; /* Opcional: hacer que la viñeta sea más visible */
-    margin-right: 8px; /* Espacio entre la viñeta y el texto del párrafo */
+    content: "•";
+    /* Puedes cambiar • por cualquier otro símbolo de viñeta que desees */
+    color: #0BC5BB;
+    /* Color de la viñeta */
+    font-weight: bold;
+    /* Opcional: hacer que la viñeta sea más visible */
   }
+
   .destitle {
-    
+
     text-align: center;
     font-family: "Oswald";
     font-weight: 400;
@@ -50,19 +56,27 @@
   }
 
   .linea-horizontal {
-    border-top: 3px solid #0bc5bb; /* Color 0BC5BB */
-    position: relative; /* Para posicionar el botón */
+    border-top: 3px solid #0bc5bb;
+    /* Color 0BC5BB */
+    position: relative;
+    /* Para posicionar el botón */
   }
 
   /* Estilos para el botón */
   .boton-sobresaliente {
     position: absolute;
-    top: -20px; /* Distancia desde la línea horizontal hacia arriba */
-    left: 50%; /* Centra el botón horizontalmente */
-    transform: translateX(-50%); /* Centra completamente el botón */
-    background-color: #0bc5bb; /* Color 0BC5BB */
-    color: white; /* Color de texto */
-    padding: 10px 20px; /* Espaciado interno */
+    top: -20px;
+    /* Distancia desde la línea horizontal hacia arriba */
+    left: 50%;
+    /* Centra el botón horizontalmente */
+    transform: translateX(-50%);
+    /* Centra completamente el botón */
+    background-color: #0bc5bb;
+    /* Color 0BC5BB */
+    color: white;
+    /* Color de texto */
+    padding: 10px 20px;
+    /* Espaciado interno */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -71,6 +85,7 @@
   .container {
     display: none;
   }
+
   .active {
     display: block;
   }
@@ -86,26 +101,32 @@
     padding: 2rem min(16.197rem, 13.4974%);
     justify-content: center;
   }
+
   .banner__title {
     display: flex;
     flex-direction: column;
-    font-size: 5rem;
     line-height: 100%;
     font-family: 'Akzidenz-grotesk-light';
     color: #FFFFFF;
-    text-align: center; /* Centra el texto horizontalmente */
+    text-align: center;
+    /* Centra el texto horizontalmente */
 
     @media screen and (min-width: 64rem) {
       font-size: 117.0937pt;
       line-height: 99.5889pt;
     }
   }
+
   .banner__word {
     font-weight: 400;
 
     &:nth-child(odd) {
       font-weight: 900;
     }
+  }
+
+  .custom-row {
+    padding: 1.5rem 1rem;
   }
 
 }

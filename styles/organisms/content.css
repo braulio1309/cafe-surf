@@ -6,7 +6,7 @@
     .title {
       display: flex;
       flex-direction: column;
-      font-size: 4rem;
+      font-size: 3rem;
       line-height: 100%;
       font-family: 'Akzidenz-grotesk-light';
 
@@ -31,7 +31,7 @@
     }
 
     .description {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       font-family: 'Oswald';
 
       @media screen and (min-width: 64rem) {

@@ -71,7 +71,7 @@
 
 .banner__subtitle {
   font-weight: 100;
-  font-size: calc(100pt / 7);
+  font-size: calc(100pt / 10);
 
   @media screen and (min-width: 48rem) {
     font-size: calc(100pt / 3);
@@ -104,8 +104,12 @@
 }
 
 .banner__title {
-  font-size: calc(220pt / 7);
+  font-size: 1.25rem;
   font-weight: 100;
+
+  @media screen and (min-width: 23.4375rem) {
+    font-size: calc(220pt / 7);
+  }
 
   @media screen and (min-width: 48rem) {
     font-size: calc(220pt / 3);
