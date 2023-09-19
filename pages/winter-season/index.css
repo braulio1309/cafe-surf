@@ -67,29 +67,29 @@
   }
 
   .square {
-    width: 300px;
-    /* Ancho deseado */
-    height: 300px;
-    /* Alto deseado */
-    border: 5px solid #05386b;
-    /* Borde grueso del mismo color */
-    color: #05386b;
     /* Color del texto */
     text-align: center;
-    /* Centra el texto horizontalmente */
-    line-height: 75px;
     /* Centra el texto verticalmente */
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
     justify-content: center;
     padding: 15px;
     transition: background-color 0.3s, color 0.3s;
     /* Transición suave */
+    width: 100%;
+    height: 100%;
 
     .image--active {
       display: none;
     }
+
+    .image--default,
+    .image--active {
+      width: 50%;
+    }
+
   }
 
   .square:hover {
@@ -113,9 +113,20 @@
   }
 
   .tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    padding: 0.3125rem;
+    gap: 0.3125rem;
+    background-color: #05386b;
+  }
+
+  .nav-item {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #ffffff;
   }
 
   .custom-row {
