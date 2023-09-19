@@ -35,7 +35,7 @@
       font-family: 'Oswald';
 
       @media screen and (min-width: 64rem) {
-        font-size: 38pt;
+        font-size: 30pt;
         line-height: 45.6pt;
         max-width: 31ch;
       }
@@ -51,7 +51,7 @@
       font-family: 'Akzidenz-grotesk-light';
 
       @media screen and (min-width: 64rem) {
-        font-size: 20pt;
+        font-size: 16pt;
         padding: .5rem 2.5rem;
       }
     }
