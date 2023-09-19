@@ -105,35 +105,39 @@
   <!--<img src="../../assets/webp/winter-season__tabs.webp" alt="Winter season tabs">-->
 
 
-  <div class="container">
-    <div class="row text-center" id="myTab" role="tablist">
+  <div class="container" style="padding-top: 1.5rem;">
+    <div class="row text-center" style="max-width: 100vw;" id="myTab" role="tablist">
       <div class="col-sm-12">
-        <ul class="" id="myTab" role="tablist">
+        <ul class="tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation" style="display: inline-block;">
             <button class="nav-link active square" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
               type="button" role="tab" aria-controls="home" aria-selected="true">
-              <img src="../../assets/webp/table.png" style="width: 150px;"><br>
+              <img class="image--default" src="../../assets/svg/surf-lesson.svg" style="width: 150px;">
+              <img class="image--active" src="../../assets/svg/surf-lesson--active.svg" style="width: 150px;">
               Surf Lesson
             </button>
           </li>
           <li class="nav-item" role="presentation" style="display: inline-block;">
             <button class="nav-link square" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
               type="button" role="tab" aria-controls="profile" aria-selected="false">
-              <img src="../../assets/webp/person.png" style="width: 150px;"><br>
+              <img class="image--default" src="../../assets/svg/paddle-boarding.svg" style="width: 150px;">
+              <img class="image--active" src="../../assets/svg/paddle-boarding--active.svg" style="width: 150px;">
               Paddle Boarding
             </button>
           </li>
           <li class="nav-item" role="presentation" style="display: inline-block;">
             <button class="nav-link square" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages"
               type="button" role="tab" aria-controls="messages" aria-selected="false">
-              <img src="../../assets/webp/bici.png" style="width: 150px;"><br>
+              <img class="image--default" src="../../assets/svg/biking.svg" style="width: 150px;">
+              <img class="image--active" src="../../assets/svg/biking--active.svg" style="width: 150px;">
               Biking
             </button>
           </li>
           <li class="nav-item" role="presentation" style="display: inline-block;">
             <button class="nav-link square" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings"
               type="button" role="tab" aria-controls="settings" aria-selected="false">
-              <img src="../../assets/webp/fish.png" style="width: 150px;"><br>
+              <img class="image--default" src="../../assets/svg/fishing-trips.svg" style="width: 150px;">
+              <img class="image--active" src="../../assets/svg/fishing-trips--active.svg" style="width: 150px;">
               Fishing Trips
             </button>
           </li>
@@ -141,12 +145,12 @@
       </div>
     </div>
   </div>
-  <div class="tab-content">
+  <div class="tab-content" style="max-width: 100vw;">
     <div class="container-fluid tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab"
       style="background-color: #05386b;">
-      <div class="row">
+      <div class="row custom-row">
         <div class="col-sm-6">
-          <div class="row" style="padding:50px  50px  0  150px;">
+          <div class="row custom-row">
             <div class="col-sm-12">
               <span class="title--dark">SURF</span>
               <span class="title--light">LESSON</span>
@@ -159,11 +163,11 @@
 
           <br><br>
 
-          <span class="title--dark" style="padding:50px  50px  0  150px;">INCLUDE</span>
+          <span class="title--dark">INCLUDE</span>
 
           <div class="linea-horizontal" style="padding:-200px;"></div>
 
-          <div class="row" style="padding:50px  50px  0  150px;">
+          <div class="row custom-row">
 
             <div class="col-sm-12">
               <p class="description parrafo-con-vineta">Transportation 4x4 (pick up and drop of)</p>
@@ -176,16 +180,30 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <img class="vertical-image" src="../../assets/webp/chicasurf.png">
+        <div class="col-sm-6 vertical-image-container">
+          <img class="vertical-image" src="../../assets/webp/surf-lesson__image.webp">
+
+          <div class="pagination">
+            <div class="pagination__controls">
+              <img class="pagination__control" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
+              <img class="pagination__control" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
+            </div>
+
+            <div class="pagination__pages">
+              <div class="pagination__page pagination__page--active"></div>
+              <div class="pagination__page"></div>
+              <div class="pagination__page"></div>
+              <div class="pagination__page"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="container-fluid tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"
       style="background-color: #05386b;">
-      <div class="row">
+      <div class="row custom-row">
         <div class="col-sm-6">
-          <div class="row" style="padding:50px  50px  0  150px;">
+          <div class="row custom-row">
             <div class="col-sm-12">
               <span class="title--dark">SURF TAB2</span>
               <span class="title--light">LESSON</span>
@@ -198,11 +216,11 @@
 
           <br><br>
 
-          <span class="title--dark" style="padding:50px  50px  0  150px;">INCLUDE</span>
+          <span class="title--dark">INCLUDE</span>
 
           <div class="linea-horizontal" style="padding:-200px;"></div>
 
-          <div class="row" style="padding:50px  50px  0  150px;">
+          <div class="row custom-row">
 
             <div class="col-sm-12">
               <p class="description parrafo-con-vineta">Transportation 4x4 (pick up and drop of)</p>
@@ -215,16 +233,29 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <img class="vertical-image" src="../../assets/webp/chicasurf.png">
+        <div class="col-sm-6 vertical-image-container">
+          <img class="vertical-image" src="../../assets/webp/surf-lesson__image.webp">
+          <div class="pagination">
+            <div class="pagination__controls">
+              <img class="pagination__control" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
+              <img class="pagination__control" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
+            </div>
+
+            <div class="pagination__pages">
+              <div class="pagination__page pagination__page--active"></div>
+              <div class="pagination__page"></div>
+              <div class="pagination__page"></div>
+              <div class="pagination__page"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="container-fluid tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab"
       style="background-color: #05386b;">
-      <div class="row">
+      <div class="row custom-row">
         <div class="col-sm-6">
-          <div class="row" style="padding:50px  50px  0  150px;">
+          <div class="row custom-row">
             <div class="col-sm-12">
               <span class="title--dark">SURF TAB3</span>
               <span class="title--light">LESSON</span>
@@ -237,12 +268,11 @@
 
           <br><br>
 
-          <span class="title--dark" style="padding:50px  50px  0  150px;">INCLUDE</span>
+          <span class="title--dark">INCLUDE</span>
 
           <div class="linea-horizontal" style="padding:-200px;"></div>
 
-          <div class="row" style="padding:50px  50px  0  150px;">
-
+          <div class="row custom-row">
             <div class="col-sm-12">
               <p class="description parrafo-con-vineta">Transportation 4x4 (pick up and drop of)</p>
               <p class="description parrafo-con-vineta">Equipment (surfboard, leash, rash, guard)</p>
@@ -254,17 +284,31 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <img class="vertical-image" src="../../assets/webp/chicasurf.png">
+        <div class="col-sm-6 vertical-image-container">
+          <img class="vertical-image" src="../../assets/webp/surf-lesson__image.webp">
+
+          <div class="pagination">
+            <div class="pagination__controls">
+              <img class="pagination__control" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
+              <img class="pagination__control" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
+            </div>
+
+            <div class="pagination__pages">
+              <div class="pagination__page pagination__page--active"></div>
+              <div class="pagination__page"></div>
+              <div class="pagination__page"></div>
+              <div class="pagination__page"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="container-fluid tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab"
       style="background-color: #05386b;">
-      <div class="row">
+      <div class="row custom-row">
         <div class="col-sm-6">
-          <div class="row" style="padding:50px  50px  0  150px;">
+          <div class="row custom-row">
             <div class="col-sm-12">
               <span class="title--dark">SURF TAB4</span>
               <span class="title--light">LESSON</span>
@@ -277,11 +321,11 @@
 
           <br><br>
 
-          <span class="title--dark" style="padding:50px  50px  0  150px;">INCLUDE</span>
+          <span class="title--dark">INCLUDE</span>
 
           <div class="linea-horizontal" style="padding:-200px;"></div>
 
-          <div class="row" style="padding:50px  50px  0  150px;">
+          <div class="row custom-row">
 
             <div class="col-sm-12">
               <p class="description parrafo-con-vineta">Transportation 4x4 (pick up and drop of)</p>
@@ -294,8 +338,22 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <img class="vertical-image" src="../../assets/webp/chicasurf.png">
+        <div class="col-sm-6 vertical-image-container">
+          <img class="vertical-image" src="../../assets/webp/surf-lesson__image.webp">
+
+          <div class="pagination">
+            <div class="pagination__controls">
+              <img class="pagination__control" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
+              <img class="pagination__control" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
+            </div>
+
+            <div class="pagination__pages">
+              <div class="pagination__page pagination__page--active"></div>
+              <div class="pagination__page"></div>
+              <div class="pagination__page"></div>
+              <div class="pagination__page"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
