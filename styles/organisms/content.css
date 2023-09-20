@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: max-content;
 
     .title {
       display: flex;
@@ -29,13 +28,11 @@
       flex-direction: column;
       gap: 3rem;
       align-items: flex-start;
-      width: max-content;
     }
 
     .description {
       font-size: 1.5rem;
       font-family: 'Oswald';
-      max-width: 31ch;
 
       @media screen and (min-width: 64rem) {
         font-size: 30pt;
