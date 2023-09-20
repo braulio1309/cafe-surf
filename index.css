@@ -101,7 +101,7 @@
     display: grid;
 
     @media screen and (min-width: 37.5rem) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
       aspect-ratio: 1920 / 1231.6667;
     }
   }
@@ -117,6 +117,7 @@
 
   .program--surf-program {
     background-image: url('./assets/webp/home__surf-program.webp');
+    height: calc(100% + 1px);
   }
 
   .program--winter-season {
