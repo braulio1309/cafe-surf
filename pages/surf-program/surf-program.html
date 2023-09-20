@@ -52,35 +52,65 @@
     </div>
   </header>
 
-  <main class="banner">
+  <main>
     <div class="banner__wrapper">
-      <img class="banner__wave" src="../../assets/svg/wave.svg" alt="Wave">
 
-      <div class="banner__info">
-        <div class="banner__headings">
-          <h3 class="banner__subtitle">SURF</h3>
-          <div class="banner__center">
-            <h4 class="banner__month">MAR</h4>
-            <h2 class="banner__title">PROGRAM</h2>
-            <h4 class="banner__month">OCT</h4>
+    <div id="bannercindicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators" style="display:none; ">
+        <button type="button" data-bs-target="#bannercindicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#bannercindicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../assets/webp/home__banner.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <img class="banner__wave" src="../../assets/svg/wave.svg" alt="Wave">
+
+            <div class="banner__info">
+              <div class="banner__headings">
+                <h3 class="banner__subtitle">SURF</h3>
+                <div class="banner__center">
+                  <h4 class="banner__month">MAR</h4>
+                  <h2 class="banner__title">PROGRAM</h2>
+                  <h4 class="banner__month">OCT</h4>
+                </div>
+              </div>
+              <p class="banner__description">OAXACA COAST</p>
+            </div>
           </div>
         </div>
-        <p class="banner__description">OAXACA COAST</p>
+        <div class="carousel-item">
+          <img src="../../assets/webp/home__banner.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <img class="banner__wave" src="../../assets/svg/wave.svg" alt="Wave">
+            <div class="banner__info">
+              <div class="banner__headings">
+                <h3 class="banner__subtitle">SURF</h3>
+                <div class="banner__center">
+                  <h4 class="banner__month">MAR</h4>
+                  <h2 class="banner__title">PROGRAM</h2>
+                  <h4 class="banner__month">OCT</h4>
+                </div>
+              </div>
+              <p class="banner__description">OAXACA COAST</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="pagination">
+        <div class="pagination__controls">
+          <img class="pagination__control paginext" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
+          <img class="pagination__control pagiprev" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
+        </div>
+  
+        <div class="pagination__pages">
+          <div class="pagination__page pagination__page--active"></div>
+          <div class="pagination__page"></div>
+        </div>
       </div>
     </div>
-
-    <div class="pagination">
-      <div class="pagination__controls">
-        <img class="pagination__control" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
-        <img class="pagination__control" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
-      </div>
-
-      <div class="pagination__pages">
-        <div class="pagination__page pagination__page--active"></div>
-        <div class="pagination__page"></div>
-        <div class="pagination__page"></div>
-        <div class="pagination__page"></div>
-      </div>
     </div>
   </main>
 
@@ -100,7 +130,7 @@
 
     <button class="button">READ MORE</button>
   </section>
-
+  
   <div class="tabs__list">
     <div id="tab1" class="tab active">
 
@@ -114,15 +144,16 @@
 
         <div class="tab__footer">
           <div class="tab__pages custom-container">
-            <div class="tab__page">
+            <div class="tab__page" data-target="#tab1">
               01
             </div>
-            <div class="tab__page">
+            <div class="tab__page" data-target="#tab2">
               02
             </div>
-            <div class="tab__page">
+            <div class="tab__page" data-target="#tab3">
               03
             </div>
+            
           </div>
 
           <img class="tab__line custom-container" src="../../assets/svg/surf-program__line.svg" />
@@ -273,13 +304,13 @@
 
         <div class="tab__footer">
           <div class="tab__pages custom-container">
-            <div class="tab__page">
+            <div class="tab__page" data-target="#tab1">
               01
             </div>
-            <div class="tab__page">
+            <div class="tab__page" data-target="#tab2">
               02
             </div>
-            <div class="tab__page">
+            <div class="tab__page" data-target="#tab3">
               03
             </div>
           </div>
@@ -422,13 +453,13 @@
 
         <div class="tab__footer">
           <div class="tab__pages custom-container">
-            <div class="tab__page">
+            <div class="tab__page" data-target="#tab1">
               01
             </div>
-            <div class="tab__page">
+            <div class="tab__page" data-target="#tab2">
               02
             </div>
-            <div class="tab__page">
+            <div class="tab__page" data-target="#tab3">
               03
             </div>
           </div>
@@ -596,4 +627,113 @@
       setInterval(alternarDivs, 6000); // Intervalo de 4 segundos
     }, 6000); // Esperar 4 segundos antes de comenzar
   });
+</script>
+<script type="text/javascript">
+  
+  $(document).ready(function () {
+    $('.pagination__page').on('click', function () {
+      $('.pagination__page').removeClass('pagination__page--active');
+
+      // Agregar la clase de activación solo al indicador clickeado
+      $(this).addClass('pagination__page--active');
+
+      let index = $(this).index(); // Obtener el índice del indicador personalizado clickeado
+      $('#carouselExampleIndicators').carousel(index); // Activar el carousel en la posición correspondiente
+    });
+
+    $('.prev').on('click', function () {
+      var currentIndex = $('#carouselExampleIndicators').find('.carousel-item.active').index();
+      if (currentIndex > 0) {
+        $('#carouselExampleIndicators').carousel('prev');
+        updateIndicators(currentIndex - 1);
+      }else{
+        $('#carouselExampleIndicators').carousel('prev');
+
+        updateIndicators($('#carouselExampleIndicators').find('.carousel-item').length - 1);
+
+      }
+    });
+
+    $('.next').on('click', function () {
+      var currentIndex = $('#carouselExampleIndicators').find('.carousel-item.active').index();
+      var totalSlides = $('#carouselExampleIndicators').find('.carousel-item').length - 1;
+      if (currentIndex < totalSlides) {
+        $('#carouselExampleIndicators').carousel('next');
+        updateIndicators(currentIndex + 1);
+      }else {
+        $('#carouselExampleIndicators').carousel('next');
+        updateIndicators(0);
+      }
+    });
+
+    // Función para actualizar los indicadores personalizados
+    function updateIndicators(index) {
+      $('.pagination__page').removeClass('pagination__page--active');
+      $('.pagination__page').eq(index).addClass('pagination__page--active');
+    }
+    $('.pagination__page').on('click', function () {
+      $('.pagination__page').removeClass('pagination__page--active');
+
+      // Agregar la clase de activación solo al indicador clickeado
+      $(this).addClass('pagination__page--active');
+
+      let index = $(this).index(); // Obtener el índice del indicador personalizado clickeado
+      $('#bannercindicators').carousel(index); // Activar el carousel en la posición correspondiente
+    });
+
+    $('.pagiprev').on('click', function () {
+      var currentIndex = $('#bannercindicators').find('.carousel-item.active').index();
+      if (currentIndex > 0) {
+        $('#bannercindicators').carousel('prev');
+        updateIndicators(currentIndex - 1);
+      }else{
+        $('#bannercindicators').carousel('prev');
+
+        updateIndicators($('#bannercindicators').find('.carousel-item').length - 1);
+
+      }
+    });
+
+    $('.paginext').on('click', function () {
+      var currentIndex = $('#bannercindicators').find('.carousel-item.active').index();
+      var totalSlides = $('#bannercindicators').find('.carousel-item').length - 1;
+      if (currentIndex < totalSlides) {
+        $('#bannercindicators').carousel('next');
+        updateIndicators(currentIndex + 1);
+      }else {
+        $('#bannercindicators').carousel('next');
+        updateIndicators(0);
+      }
+    });
+
+    // Función para actualizar los indicadores personalizados
+    function updateIndicators(index) {
+      $('.pagination__page').removeClass('pagination__page--active');
+      $('.pagination__page').eq(index).addClass('pagination__page--active');
+    }
+
+    $('.tab__page').on('click', function () {
+      // Obtener el valor del número dentro del elemento
+      var numero = $(this).text().trim();
+
+      // Construir el ID del tab correspondiente
+      var target = '#tab' + numero[1];
+
+      // Remover la clase "active" de todos los elementos con la clase "tab__page"
+      $('.tab__page').removeClass('active');
+
+      // Agregar la clase "active" al elemento actual
+      $(this).addClass('active');
+
+      // Remover la clase "active" de todos los elementos con ID "tab1", "tab2", y "tab3"
+      $('#tab1, #tab2, #tab3').removeClass('active');
+
+      // Agregar la clase "active" al elemento correspondiente (tab1, tab2 o tab3)
+      $(target).addClass('active');
+    });
+
+
+  });
+
+  
 </script>

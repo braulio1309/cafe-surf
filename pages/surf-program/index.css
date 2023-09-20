@@ -247,6 +247,7 @@
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
     text-align: center;
+    color: #05386B !important;
 
     @media screen and (min-width: 64rem) {
       font-size: 5rem;
@@ -283,7 +284,7 @@
 
   .tab__page {
     font-weight: 900;
-
+    cursor: pointer;
     color: #979797;
 
     @media screen and (min-width: 64rem) {
