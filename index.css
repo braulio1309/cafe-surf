@@ -17,11 +17,6 @@
     line-height: 100%;
     font-family: 'Akzidenz-grotesk-light';
     color: #FFFFFF;
-
-    @media screen and (min-width: 64rem) {
-      font-size: 117.0937pt;
-      line-height: 99.5889pt;
-    }
   }
 
   .banner__word {
@@ -107,6 +102,7 @@
 
     @media screen and (min-width: 37.5rem) {
       grid-template-columns: repeat(2, 1fr);
+      aspect-ratio: 1920 / 1231.6667;
     }
   }
 
@@ -148,11 +144,11 @@
     flex-direction: column;
     align-items: flex-end;
     color: #FFFFFF;
-    font-size: 40pt;
+    font-size: 2.25rem;
     line-height: 100%;
 
     @media screen and (min-width: 64rem) {
-      font-size: 80pt;
+      font-size: calc(80pt / 2);
     }
   }
 
@@ -169,11 +165,11 @@
   .program__range {
     color: #ffffff;
     align-self: flex-end;
-    font-size: 15pt;
+    font-size: 1rem;
     line-height: calc(67.6512pt / 2);
 
     @media screen and (min-width: 64rem) {
-      font-size: 30pt;
+      font-size: calc(30pt / 2);
       line-height: 67.6512pt;
     }
   }
@@ -183,12 +179,15 @@
   }
 
   .great-location {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 8.4184rem min(8.4184rem, 7.0153%) 0;
     gap: 5.0973rem;
 
     @media screen and (min-width: 85.375rem) {
-      grid-template-columns: auto min(50%, 50.978rem);
+      flex-direction: row;
+      justify-content: center;
     }
 
     @media screen and (min-width: 90rem) {
@@ -198,14 +197,22 @@
 
   .great-location__images {
     display: flex;
+    flex-direction: column;
     gap: 2.2315rem;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: 64rem) {
+      flex-direction: row;
+    }
   }
 
   .great-location__image {
-    width: 50%;
-    aspect-ratio: 437.2776 / 651.2593;
+    width: 100%;
+
+    @media screen and (min-width: 64rem) {
+      width: auto;
+    }
   }
 
   .great-location__image--1 {
@@ -214,6 +221,5 @@
 
   .great-location__image--2 {
     aspect-ratio: 342.6667 / 512.2963;
-    max-width: 32.0185rem;
   }
 }

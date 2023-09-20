@@ -111,16 +111,13 @@
     font-size: calc(220pt / 7);
   }
 
-  @media screen and (min-width: 48rem) {
-    font-size: calc(220pt / 3);
+  @media screen and (min-width: 64rem) {
+    font-size: calc(220pt / 4);
   }
 
-  @media screen and (min-width: 64rem) {
-    font-size: calc(220pt / 2);
-  }
 
   @media screen and (min-width: 120rem) {
-    font-size: 220pt;
+    font-size: calc(220pt / 2);
   }
 }
 
