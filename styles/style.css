@@ -24,6 +24,7 @@
 
 /* Organisms */
 @import './organisms/banner.css';
+@import './organisms/carousel.css';
 @import './organisms/header.css';
 @import './organisms/nav.css';
 @import './organisms/footer.css';
