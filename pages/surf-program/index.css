@@ -10,7 +10,7 @@
   .title--dark {
     color: #05386b;
     font-size: 15pt;
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .title--light {
@@ -33,6 +33,12 @@
     color: #0BC5BB;
   }
 
+  .parrafo-con-vineta {
+    max-width: 40ch;
+    display: block;
+    padding: 0;
+  }
+
   .parrafo-con-vineta::before {
     content: "•";
     /* Puedes cambiar • por cualquier otro símbolo de viñeta que desees */
@@ -42,24 +48,75 @@
     /* Opcional: hacer que la viñeta sea más visible */
   }
 
-  .destitle {
-
+  .title {
     text-align: center;
     font-family: "Oswald";
     font-weight: 400;
     font-size: 15pt;
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .read {
     text-align: right;
   }
 
+  .read__text {
+    @media screen and (min-width: 64rem) {
+      padding-right: 3rem;
+    }
+  }
+
+  .read--flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .linea-horizontal {
-    border-top: 3px solid #0bc5bb;
+    display: flex;
+    position: relative;
+    height: 3px;
+    background-color: #0bc5bb;
     /* Color 0BC5BB */
     position: relative;
     /* Para posicionar el botón */
+    justify-content: flex-end;
+    padding-right: 0;
+
+    @media screen and (min-width: 64rem) {
+      padding-right: 2.5rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: calc(100% - 100vw);
+        width: calc(100% + 100vw);
+        height: 100%;
+        background-color: #0bc5bb;
+      }
+    }
+  }
+
+  .linea-horizontal__button {
+    position: relative;
+    bottom: 2.3262rem;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    background-color: #0bc5bb;
+    gap: 0.8ch;
+    padding: 2.25ch;
+
+  }
+
+  .linea-horizontal__icon {
+    width: 2.5ch;
+  }
+
+  .linea-horizontal__text {
+    font-size: 1rem;
+    color: #05386B;
   }
 
   /* Estilos para el botón */
@@ -82,12 +139,21 @@
     cursor: pointer;
   }
 
-  .container {
-    display: none;
+  .tabs__list {
+    position: relative;
+  }
+
+  .tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s ease;
   }
 
   .active {
-    display: block;
+    position: relative;
+    opacity: 1;
   }
 
   .banner {
@@ -126,7 +192,200 @@
   }
 
   .custom-row {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #979797;
   }
 
+  .custom-row:last-child {
+    border-bottom: none;
+  }
+
+  .tab__banner {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tab__index {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+
+    @media screen and (min-width: 26.875rem) {
+      right: 15%;
+    }
+  }
+
+  .tab__index-logo {
+    aspect-ratio: 1 / 1;
+  }
+
+  .tab__index-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -1rem;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #05386B;
+
+    @media screen and (min-width: 26.875rem) {
+      font-size: 5rem;
+      right: -2rem;
+    }
+  }
+
+  .tab__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    text-align: center;
+
+    @media screen and (min-width: 64rem) {
+      font-size: 5rem;
+    }
+  }
+
+  .tab__footer {
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+
+    @media screen and (min-width: 26.875rem) {
+      gap: 1rem;
+    }
+  }
+
+  .tab__pages {
+    display: flex;
+    gap: 0.8rem;
+    width: 90%;
+    justify-content: flex-end;
+    padding: 0 1rem;
+
+    @media screen and (min-width: 64rem) {
+      width: 74.4409%;
+      padding: 0 3rem;
+      gap: 1rem;
+    }
+  }
+
+  .tab__page {
+    font-weight: 900;
+
+    color: #979797;
+
+    @media screen and (min-width: 64rem) {
+      font-size: 1.375rem;
+    }
+  }
+
+  .tab__line {
+    width: 90%;
+
+    @media screen and (min-width: 64rem) {
+      width: 74.4409%;
+
+    }
+  }
+
+  #tab1.tab.active {
+    .tab__page:nth-child(1) {
+      color: #05386B !important;
+    }
+  }
+
+  #tab2.tab.active {
+    .tab__page:nth-child(2) {
+      color: #05386B !important;
+    }
+  }
+
+  #tab3.tab.active {
+    .tab__page:nth-child(3) {
+      color: #05386B !important;
+    }
+  }
+
+  .tab__content {
+    padding: 5rem 0;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .head {
+    padding: 4rem 1.5rem 1rem;
+    padding-bottom: 3.3262rem;
+
+    @media screen and (min-width: 26.875rem) {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .item {
+    padding: 1rem 1.5rem;
+
+    @media screen and (min-width: 64rem) {
+      padding: 2rem 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  .item--grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @media screen and (min-width: 64rem) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .ddd {
+    position: relative;
+    min-height: 100%;
+  }
+
+  .book-now {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    gap: 0.8ch;
+    padding: 1ch;
+  }
+
+  .book-now__icon {
+    width: 1.5ch;
+
+    @media screen and (min-width: 64rem) {
+      width: 2.5ch;
+    }
+  }
+
+  .book-now__text {
+    font-size: 0.625rem;
+    font-family: 'Akzidenz-grotesk-light';
+    color: #0bc5bb;
+
+    @media screen and (min-width: 64rem) {
+      font-size: 1rem;
+    }
+  }
 }
