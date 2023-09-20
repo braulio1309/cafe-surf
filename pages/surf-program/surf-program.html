@@ -416,7 +416,39 @@
           </div>
           <div class="read ddd read--flex">
             <p class="read__text">READ MORE</p>
-            <img src="../../assets/webp/car.png" alt="Full package 1">
+            <div id="bannercar" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators" style="display: none;">
+                
+                    <button type="button" data-bs-target="#bannercar" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                      <div class="pagination__page pagination__page--active"></div>
+                    </button>
+                  <button type="button" data-bs-target="#bannercar" data-bs-slide-to="1" aria-label="Slide 2">
+                    <div class="pagination__page"></div>
+  
+                  </button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../../assets/webp/car.png" alt="Full package 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="../../assets/webp/car.png" alt="Full package 1">
+                </div>
+              </div>
+              <div class="pagination">
+  
+                <div class="pagination__controls">
+                  <img class="pagination__control bannercarnext" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
+                  <img class="pagination__control bannercarprev" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
+                </div>
+    
+                <div class="pagination__pages">
+                  <div class="pagination__page pagination__page--active"></div>
+                  <div class="pagination__page"></div>
+                </div>
+              </div>
+              
+            </div>
           </div>
         </div>
 
@@ -629,11 +661,6 @@
     // Mostrar el primer div (tab1) inicialmente
     $('.tab:first').addClass('active');
 
-    // Esperar 4 segundos antes de comenzar a alternar
-    setTimeout(function () {
-      // Iniciar el intervalo
-      setInterval(alternarDivs, 6000); // Intervalo de 4 segundos
-    }, 6000); // Esperar 4 segundos antes de comenzar
   });
 </script>
 <script type="text/javascript">
@@ -739,6 +766,47 @@
       // Agregar la clase "active" al elemento correspondiente (tab1, tab2 o tab3)
       $(target).addClass('active');
     });
+
+    $('.pagination__page').on('click', function () {
+      $('.pagination__page').removeClass('pagination__page--active');
+
+      // Agregar la clase de activación solo al indicador clickeado
+      $(this).addClass('pagination__page--active');
+
+      let index = $(this).index(); // Obtener el índice del indicador personalizado clickeado
+      $('#bannercar').carousel(index); // Activar el carousel en la posición correspondiente
+    });
+
+    $('.bannercarprev').on('click', function () {
+      var currentIndex = $('#bannercar').find('.carousel-item.active').index();
+      if (currentIndex > 0) {
+        $('#bannercar').carousel('prev');
+        updateIndicators(currentIndex - 1);
+      }else{
+        $('#bannercar').carousel('prev');
+
+        updateIndicators($('#bannercar').find('.carousel-item').length - 1);
+
+      }
+    });
+
+    $('.bannercarnext').on('click', function () {
+      var currentIndex = $('#bannercar').find('.carousel-item.active').index();
+      var totalSlides = $('#bannercar').find('.carousel-item').length - 1;
+      if (currentIndex < totalSlides) {
+        $('#bannercar').carousel('next');
+        updateIndicators(currentIndex + 1);
+      }else {
+        $('#bannercar').carousel('next');
+        updateIndicators(0);
+      }
+    });
+
+    // Función para actualizar los indicadores personalizados
+    function updateIndicators(index) {
+      $('.pagination__page').removeClass('pagination__page--active');
+      $('.pagination__page').eq(index).addClass('pagination__page--active');
+    }
 
 
   });
