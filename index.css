@@ -12,11 +12,12 @@
 
   .banner__title {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     line-height: 100%;
+    flex-direction: column;
     font-family: 'Akzidenz-grotesk-light';
     color: #FFFFFF;
+    width: 85%;
   }
 
   .banner__word {
