@@ -28,6 +28,7 @@
   .item {
     min-height: 100%;
     object-fit: cover;
+    padding: 0 !important;
   }
 
   .item--large {
