@@ -33,7 +33,7 @@
     font-weight: 900;
 
     @media screen and (min-width: 64rem) {
-      font-size: 80pt;
+      font-size: 40pt;
     }
   }
 
@@ -46,7 +46,7 @@
     font-weight: 400;
 
     @media screen and (min-width: 64rem) {
-      font-size: 30pt;
+      font-size: 15pt;
     }
   }
 
