@@ -56,6 +56,12 @@
     padding: 20px 0;
   }
 
+  @media screen and (min-width: 1000px) {
+    .custom-row.tab__content {
+      padding-left: 170px;
+    }
+  }
+
   .read {
     text-align: right;
   }
