@@ -22,6 +22,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2223rem;
     max-width: 54.125rem;
+    padding: 0;
   }
 
   .item {
@@ -32,6 +33,7 @@
   .item--large {
     width: 100%;
     max-width: 54.125rem;
+    padding: 0;
 
     @media screen and (min-width: 80rem) {
       width: unset;
