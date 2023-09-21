@@ -460,21 +460,24 @@
   }
 
   .property-details {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 
     @media screen and (min-width: 48rem) {
+      display: grid;
       grid-template-columns: 60% 40%;
     }
   }
 
   .property-details__content {
-    display: flex;
-    flex-direction: column;
-    gap: 4ch;
     background-color: #E5EBF0;
     color: #05386b;
-
     padding: 2rem 1.5rem;
+
+    @media screen and (min-width: 48rem) {
+      display: flex;
+      justify-content: flex-end;
+    }
 
     @media screen and (min-width: 64rem) {
       padding: 2rem 5rem;
@@ -518,5 +521,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .property-details__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4ch;
+    width: max-content;
   }
 }
