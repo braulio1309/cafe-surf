@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="./index.css">
 </head>
+
 <body class="winter-season">
   <header class="header__host">
     <div class="header custom-container">
@@ -55,14 +56,15 @@
   <main>
     <div id="bannercindicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators" style="display:none; ">
-        <button type="button" data-bs-target="#bannercindicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#bannercindicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#bannercindicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="../../assets/webp/winter-season__banner-background.webp" alt="...">
           <div class="carousel-caption">
-            <div class="banner__info" >
+            <div class="banner__info">
               <div class="banner__headings">
                 <h3 class="banner__subtitle">WINTER</h3>
                 <div class="banner__center">
@@ -91,15 +93,15 @@
             </div>
           </div>
         </div>
-        
+
       </div>
-      
+
       <div class="pagination">
         <div class="pagination__controls">
           <img class="pagination__control paginext" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
           <img class="pagination__control pagiprev" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
         </div>
-  
+
         <div class="pagination__pages">
           <div class="pagination__page pagination__page--active"></div>
           <div class="pagination__page"></div>
@@ -107,7 +109,7 @@
       </div>
     </div>
   </main>
-  
+
 
   <section class="intro">
     <div class="intro__description">
@@ -164,10 +166,10 @@
   <div class="tab-content">
     <div class="container-fluid tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab"
       style="background-color: #05386b;">
-      <div class="row custom-row">
-        <div class="col-sm-6">
-          <div class="row custom-row">
-            <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-6 column column-padding">
+          <div class="row row-padding">
+            <div class="col-sm-12" style="padding: 0;">
               <span class="title--dark">SURF</span>
               <span class="title--light">LESSON</span>
               <br>
@@ -179,13 +181,19 @@
 
           <br><br>
 
-          <span class="title--dark">INCLUDE</span>
+          <div class="heading">
+            <span class="title--dark">INCLUDE</span>
+            <div class="book-now">
+              <img class="book-now__icon" src="../../assets/svg/whatsapp.svg" alt="Whatsapp">
+              <span class="book-now__text">BOOK NOW</span>
+            </div>
+          </div>
 
           <div class="linea-horizontal" style="padding:-200px;"></div>
 
-          <div class="row custom-row">
+          <div class="row row-padding">
 
-            <div class="col-sm-12">
+            <div class="col-sm-12" style="padding: 0;">
               <p class="description parrafo-con-vineta">Transportation 4x4 (pick up and drop of)</p>
               <p class="description parrafo-con-vineta">Equipment (surfboard, leash, rash, guard)</p>
               <p class="description parrafo-con-vineta">Passionate, qualified and experience</p>
@@ -196,17 +204,19 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 ">
+        <div class="col-sm-6 column">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators" style="display: none;">
-              
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-                    <div class="pagination__page pagination__page--active"></div>
-                  </button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
-                  <div class="pagination__page"></div>
 
-                </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1">
+                <div class="pagination__page pagination__page--active"></div>
+              </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2">
+                <div class="pagination__page"></div>
+
+              </button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -218,10 +228,12 @@
             </div>
             <div class="pagination">
               <div class="pagination__controls" style="display:none;">
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
                   <img class="pagination__control" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
                 </button>
-                <button class="carousel-control-next" style="margin-left: -20px;" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <button class="carousel-control-next" style="margin-left: -20px;"
+                  data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                   <img class="pagination__control" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
                 </button>
               </div>
@@ -230,25 +242,25 @@
                 <img class="pagination__control next" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
                 <img class="pagination__control prev" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
               </div>
-  
+
               <div class="pagination__pages">
                 <div class="pagination__page pagination__page--active"></div>
                 <div class="pagination__page"></div>
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
     </div>
     <div class="container-fluid tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"
       style="background-color: #05386b;">
-      <div class="row custom-row">
-        <div class="col-sm-6">
-          <div class="row custom-row">
-            <div class="col-sm-12">
-              <span class="title--dark">SURF TAB2</span>
-              <span class="title--light">LESSON</span>
+      <div class="row">
+        <div class="col-sm-6 column column-padding">
+          <div class="row row-padding">
+            <div class="col-sm-12" style="padding: 0;">
+              <span class="title--dark">SURF</span>
+              <span class="title--light">LESSON 2</span>
               <br>
               <p class="description">The Oaxaca Cost is a Wild beauty, nature still strongly over tops this area,
                 offering a mystical and unique connection with the scenary, its a very special place to take your first
@@ -258,13 +270,19 @@
 
           <br><br>
 
-          <span class="title--dark">INCLUDE</span>
+          <div class="heading">
+            <span class="title--dark">INCLUDE</span>
+            <div class="book-now">
+              <img class="book-now__icon" src="../../assets/svg/whatsapp.svg" alt="Whatsapp">
+              <span class="book-now__text">BOOK NOW</span>
+            </div>
+          </div>
 
           <div class="linea-horizontal" style="padding:-200px;"></div>
 
-          <div class="row custom-row">
+          <div class="row row-padding">
 
-            <div class="col-sm-12">
+            <div class="col-sm-12" style="padding: 0;">
               <p class="description parrafo-con-vineta">Transportation 4x4 (pick up and drop of)</p>
               <p class="description parrafo-con-vineta">Equipment (surfboard, leash, rash, guard)</p>
               <p class="description parrafo-con-vineta">Passionate, qualified and experience</p>
@@ -275,17 +293,19 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 vertical-image-container">
-          <div id="tab2carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="col-sm-6 column">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators" style="display: none;">
-              
-                  <button type="button" data-bs-target="#tab2carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-                    <div class="pagination__page pagination__page--active"></div>
-                  </button>
-                <button type="button" data-bs-target="#tab2carousel" data-bs-slide-to="1" aria-label="Slide 2">
-                  <div class="pagination__page"></div>
 
-                </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1">
+                <div class="pagination__page pagination__page--active"></div>
+              </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2">
+                <div class="pagination__page"></div>
+
+              </button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -296,30 +316,40 @@
               </div>
             </div>
             <div class="pagination">
+              <div class="pagination__controls" style="display:none;">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <img class="pagination__control" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
+                </button>
+                <button class="carousel-control-next" style="margin-left: -20px;"
+                  data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <img class="pagination__control" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
+                </button>
+              </div>
 
               <div class="pagination__controls">
-                <img class="pagination__control tab2next" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
-                <img class="pagination__control tab2prev" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
+                <img class="pagination__control next" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
+                <img class="pagination__control prev" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
               </div>
-  
+
               <div class="pagination__pages">
                 <div class="pagination__page pagination__page--active"></div>
                 <div class="pagination__page"></div>
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
     </div>
     <div class="container-fluid tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab"
       style="background-color: #05386b;">
-      <div class="row custom-row">
-        <div class="col-sm-6">
-          <div class="row custom-row">
-            <div class="col-sm-12">
-              <span class="title--dark">SURF TAB3</span>
-              <span class="title--light">LESSON</span>
+      <div class="row">
+        <div class="col-sm-6 column column-padding">
+          <div class="row row-padding">
+            <div class="col-sm-12" style="padding: 0;">
+              <span class="title--dark">SURF</span>
+              <span class="title--light">LESSON 3</span>
               <br>
               <p class="description">The Oaxaca Cost is a Wild beauty, nature still strongly over tops this area,
                 offering a mystical and unique connection with the scenary, its a very special place to take your first
@@ -329,12 +359,19 @@
 
           <br><br>
 
-          <span class="title--dark">INCLUDE</span>
+          <div class="heading">
+            <span class="title--dark">INCLUDE</span>
+            <div class="book-now">
+              <img class="book-now__icon" src="../../assets/svg/whatsapp.svg" alt="Whatsapp">
+              <span class="book-now__text">BOOK NOW</span>
+            </div>
+          </div>
 
           <div class="linea-horizontal" style="padding:-200px;"></div>
 
-          <div class="row custom-row">
-            <div class="col-sm-12">
+          <div class="row row-padding">
+
+            <div class="col-sm-12" style="padding: 0;">
               <p class="description parrafo-con-vineta">Transportation 4x4 (pick up and drop of)</p>
               <p class="description parrafo-con-vineta">Equipment (surfboard, leash, rash, guard)</p>
               <p class="description parrafo-con-vineta">Passionate, qualified and experience</p>
@@ -345,17 +382,19 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 vertical-image-container">
-          <div id="tab3carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="col-sm-6 column">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators" style="display: none;">
-              
-                  <button type="button" data-bs-target="#tab3carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-                    <div class="pagination__page pagination__page--active"></div>
-                  </button>
-                <button type="button" data-bs-target="#tab3carousel" data-bs-slide-to="1" aria-label="Slide 2">
-                  <div class="pagination__page"></div>
 
-                </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1">
+                <div class="pagination__page pagination__page--active"></div>
+              </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2">
+                <div class="pagination__page"></div>
+
+              </button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -366,31 +405,40 @@
               </div>
             </div>
             <div class="pagination">
+              <div class="pagination__controls" style="display:none;">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <img class="pagination__control" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
+                </button>
+                <button class="carousel-control-next" style="margin-left: -20px;"
+                  data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <img class="pagination__control" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
+                </button>
+              </div>
 
               <div class="pagination__controls">
-                <img class="pagination__control tab3next" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
-                <img class="pagination__control tab3prev" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
+                <img class="pagination__control next" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
+                <img class="pagination__control prev" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
               </div>
-  
+
               <div class="pagination__pages">
                 <div class="pagination__page pagination__page--active"></div>
                 <div class="pagination__page"></div>
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
     </div>
-
     <div class="container-fluid tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab"
       style="background-color: #05386b;">
-      <div class="row custom-row">
-        <div class="col-sm-6">
-          <div class="row custom-row">
-            <div class="col-sm-12">
-              <span class="title--dark">SURF TAB4</span>
-              <span class="title--light">LESSON</span>
+      <div class="row">
+        <div class="col-sm-6 column column-padding">
+          <div class="row row-padding">
+            <div class="col-sm-12" style="padding: 0;">
+              <span class="title--dark">SURF</span>
+              <span class="title--light">LESSON 4</span>
               <br>
               <p class="description">The Oaxaca Cost is a Wild beauty, nature still strongly over tops this area,
                 offering a mystical and unique connection with the scenary, its a very special place to take your first
@@ -400,13 +448,19 @@
 
           <br><br>
 
-          <span class="title--dark">INCLUDE</span>
+          <div class="heading">
+            <span class="title--dark">INCLUDE</span>
+            <div class="book-now">
+              <img class="book-now__icon" src="../../assets/svg/whatsapp.svg" alt="Whatsapp">
+              <span class="book-now__text">BOOK NOW</span>
+            </div>
+          </div>
 
           <div class="linea-horizontal" style="padding:-200px;"></div>
 
-          <div class="row custom-row">
+          <div class="row row-padding">
 
-            <div class="col-sm-12">
+            <div class="col-sm-12" style="padding: 0;">
               <p class="description parrafo-con-vineta">Transportation 4x4 (pick up and drop of)</p>
               <p class="description parrafo-con-vineta">Equipment (surfboard, leash, rash, guard)</p>
               <p class="description parrafo-con-vineta">Passionate, qualified and experience</p>
@@ -417,17 +471,19 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 vertical-image-container">
-          <div id="tab4carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="col-sm-6 column">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators" style="display: none;">
-              
-                  <button type="button" data-bs-target="#tab4carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-                    <div class="pagination__page pagination__page--active"></div>
-                  </button>
-                <button type="button" data-bs-target="#tab4carousel" data-bs-slide-to="1" aria-label="Slide 2">
-                  <div class="pagination__page"></div>
 
-                </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1">
+                <div class="pagination__page pagination__page--active"></div>
+              </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2">
+                <div class="pagination__page"></div>
+
+              </button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -438,17 +494,28 @@
               </div>
             </div>
             <div class="pagination">
+              <div class="pagination__controls" style="display:none;">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <img class="pagination__control" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
+                </button>
+                <button class="carousel-control-next" style="margin-left: -20px;"
+                  data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <img class="pagination__control" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
+                </button>
+              </div>
 
               <div class="pagination__controls">
-                <img class="pagination__control tab4next" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
-                <img class="pagination__control tab4prev" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
+                <img class="pagination__control next" src="../../assets/svg/arrow--left.svg" alt="Arrow Left">
+                <img class="pagination__control prev" src="../../assets/svg/arrow--right.svg" alt="Arrow Right">
               </div>
-  
+
               <div class="pagination__pages">
                 <div class="pagination__page pagination__page--active"></div>
                 <div class="pagination__page"></div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -481,49 +548,37 @@
       <div class="col-sm-3">
         <div class="items">
           <img class="item" src="../../assets/webp/winter-season-gallery__item--1.webp" alt="Car"
-          style="max-width: none !important; width: 100%;">
+            style="max-width: none !important; width: 100%;">
         </div>
       </div>
       <div class="col-sm-3">
         <div class="items">
           <img class="item" src="../../assets/webp/winter-season-gallery__item--2.webp" alt="Dunk"
-          style="max-width: none !important; width: 100%;">
+            style="max-width: none !important; width: 100%;">
         </div>
 
       </div>
-      
+
       <div class="col-sm-6">
         <img class="item--large" src="../../assets/webp/winter-season-gallery__item--3.webp" alt="Beach">
 
       </div>
     </div>
-    
+
     <div class="row">
       <div class="col-sm-6">
-        <img
-          src="../../assets/webp/winter-season-gallery__item--4.webp"
-          alt="Wintry Mountain Landscape"
-          style="max-width: none !important; width: 100%;"
-  
-        />
+        <img src="../../assets/webp/winter-season-gallery__item--4.webp" alt="Wintry Mountain Landscape"
+          style="max-width: none !important; width: 100%;" />
       </div>
       <div class="col-sm-3">
-        <img
-          src="../../assets/webp/winter-season-gallery__item--5.webp"
-          alt="Boat on Calm Water"
-          style="max-width: none !important; width: 100%;"
-  
-        />
+        <img src="../../assets/webp/winter-season-gallery__item--5.webp" alt="Boat on Calm Water"
+          style="max-width: none !important; width: 100%;" />
       </div>
       <div class="col-sm-3">
-        <img
-          src="../../assets/webp/winter-season-gallery__item--6.webp"
-          alt="Wintry Mountain Landscape"
-          style="max-width: none !important; width: 100%;"
-  
-        />
+        <img src="../../assets/webp/winter-season-gallery__item--6.webp" alt="Wintry Mountain Landscape"
+          style="max-width: none !important; width: 100%;" />
       </div>
-      
+
     </div>
   </div>
 
@@ -575,7 +630,7 @@
 
 </body>
 <script type="text/javascript">
-  
+
   $(document).ready(function () {
     $('.pagination__page').on('click', function () {
       $('.pagination__page').removeClass('pagination__page--active');
@@ -592,7 +647,7 @@
       if (currentIndex > 0) {
         $('#carouselExampleIndicators').carousel('prev');
         updateIndicators(currentIndex - 1);
-      }else{
+      } else {
         $('#carouselExampleIndicators').carousel('prev');
 
         updateIndicators($('#carouselExampleIndicators').find('.carousel-item').length - 1);
@@ -606,7 +661,7 @@
       if (currentIndex < totalSlides) {
         $('#carouselExampleIndicators').carousel('next');
         updateIndicators(currentIndex + 1);
-      }else {
+      } else {
         $('#carouselExampleIndicators').carousel('next');
         updateIndicators(0);
       }
@@ -632,7 +687,7 @@
       if (currentIndex > 0) {
         $('#bannercindicators').carousel('prev');
         updateIndicators(currentIndex - 1);
-      }else{
+      } else {
         $('#bannercindicators').carousel('prev');
 
         updateIndicators($('#bannercindicators').find('.carousel-item').length - 1);
@@ -646,7 +701,7 @@
       if (currentIndex < totalSlides) {
         $('#bannercindicators').carousel('next');
         updateIndicators(currentIndex + 1);
-      }else {
+      } else {
         $('#bannercindicators').carousel('next');
         updateIndicators(0);
       }
@@ -663,7 +718,7 @@
       if (currentIndex > 0) {
         $('#tab3carousel').carousel('prev');
         updateIndicators(currentIndex - 1);
-      }else{
+      } else {
         $('#tab3carousel').carousel('prev');
 
         updateIndicators($('#tab3carousel').find('.carousel-item').length - 1);
@@ -677,7 +732,7 @@
       if (currentIndex < totalSlides) {
         $('#tab3carousel').carousel('next');
         updateIndicators(currentIndex + 1);
-      }else {
+      } else {
         $('#tab3carousel').carousel('next');
         updateIndicators(0);
       }
@@ -710,7 +765,7 @@
       if (currentIndex > 0) {
         $('#tab3carousel').carousel('prev');
         updateIndicators(currentIndex - 1);
-      }else{
+      } else {
         $('#tab3carousel').carousel('prev');
 
         updateIndicators($('#tab3carousel').find('.carousel-item').length - 1);
@@ -724,7 +779,7 @@
       if (currentIndex < totalSlides) {
         $('#tab4carousel').carousel('next');
         updateIndicators(currentIndex + 1);
-      }else {
+      } else {
         $('#tab4carousel').carousel('next');
         updateIndicators(0);
       }
@@ -735,7 +790,7 @@
       if (currentIndex > 0) {
         $('#tab4carousel').carousel('prev');
         updateIndicators(currentIndex - 1);
-      }else{
+      } else {
         $('#tab4carousel').carousel('prev');
 
         updateIndicators($('#tab4carousel').find('.carousel-item').length - 1);
@@ -766,7 +821,7 @@
       if (currentIndex < totalSlides) {
         $('#tab2carousel').carousel('next');
         updateIndicators(currentIndex + 1);
-      }else {
+      } else {
         $('#tab2carousel').carousel('next');
         updateIndicators(0);
       }
@@ -777,7 +832,7 @@
       if (currentIndex > 0) {
         $('#tab2carousel').carousel('prev');
         updateIndicators(currentIndex - 1);
-      }else{
+      } else {
         $('#tab2carousel').carousel('prev');
         updateIndicators($('#tab2carousel').find('.carousel-item').length - 1);
       }
@@ -800,9 +855,9 @@
     });
   });
 
-  
 
-  
+
+
 </script>
 
 </html>

@@ -36,7 +36,6 @@
   .title--dark {
     color: white;
     font-size: 30pt;
-    padding: 20px;
   }
 
   .title--light {
@@ -192,5 +191,51 @@
   .pagination__page--active {
     opacity: 1;
   }
-  
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+
+    @media screen and (min-width: 64rem) {
+      padding: 0 8% 0 20%;
+    }
+  }
+
+  .column {
+    padding: 0;
+  }
+
+  .column-padding {
+    padding: 1rem 0;
+  }
+
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+
+  .row-padding {
+    padding: 2ch 8%;
+
+    @media screen and (min-width: 64rem) {
+      padding: 2ch 8% 2ch 20%;
+    }
+  }
+
+  .tab-pane {
+    padding: 0;
+  }
+
+  .book-now {
+    display: flex;
+    align-items: center;
+    gap: 1ch;
+    cursor: pointer;
+  }
+
+  .book-now__text {
+    font-family: 'Akzidenz-grotesk-light';
+  }
 }
