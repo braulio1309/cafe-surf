@@ -29,8 +29,7 @@
   }
 
   .miniatures {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+   
 
     @media screen and (min-width: 37.5rem) {
       grid-template-columns: repeat(4, 1fr);
