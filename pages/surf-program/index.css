@@ -1,5 +1,5 @@
 .surf-program {
-  
+
   .banner {
     background-image: url("../../assets/webp/surf-program__banner-background.webp");
     background-position: center center;
@@ -98,7 +98,7 @@
         position: absolute;
         top: 0;
         left: calc(100% - 100vw);
-        width: calc(100% + 100vw);
+        width: calc(100vw - 100%);
         height: 100%;
         background-color: #0bc5bb;
       }
@@ -155,14 +155,15 @@
   .tab {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 100%;
     opacity: 0;
-    transition: all 1s ease;
+    transition: left 0.4s ease;
   }
 
   .active {
     position: relative;
     opacity: 1;
+    left: 0;
   }
 
   .banner {
@@ -535,5 +536,10 @@
     flex-direction: column;
     gap: 4ch;
     width: max-content;
+  }
+
+  .surf-program__container {
+    max-width: 78.1655rem;
+    margin: 0 auto;
   }
 }
