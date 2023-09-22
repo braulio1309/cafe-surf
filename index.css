@@ -203,15 +203,18 @@
   }
 
   .great-location__images {
-    display: flex;
-    flex-direction: column;
-    gap: 2.2315rem;
+    display: grid;
+    grid-template-columns: 53.61106751932206% 1fr;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
+
+    @media screen and (min-width: 23.4375rem) {
+      gap: 1.5rem;
+    }
 
     @media screen and (min-width: 64rem) {
-      display: grid;
-      grid-template-columns: 53.61106751932206% 1fr;
+      gap: 2.2315rem;
     }
   }
 
