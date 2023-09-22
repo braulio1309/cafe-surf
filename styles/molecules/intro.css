@@ -32,11 +32,11 @@
   flex-direction: column;
   gap: 2.5ch;
   max-width: 251ch;
+  font-size: 16pt;
 }
 
 .intro__paragraph {
   text-align: center;
-
   @media screen and (min-width: 64rem) {
     font-size: 16pt;
   }

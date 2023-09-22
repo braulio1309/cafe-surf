@@ -50,7 +50,6 @@
     flex-direction: column-reverse;
     gap: 3.3137rem;
     padding: 8.4184rem min(8.4184rem, 7.0153%);
-
     @media screen and (min-width: 64rem) {
       flex-direction: row;
       gap: 6.392rem;
@@ -94,12 +93,12 @@
     font-size: 16pt;
     max-width: 63ch;
     text-align: center;
-    font-family: 'Oswald';
+    font-family: 'Oswald ExtraLight';
   }
 
   .gil-cardenas__more {
     font-size: 10pt;
-    font-family: 'Akzidenz-grotesk-light';
+    font-family: 'Oswald ExtraLight';
   }
 
   .programs {
@@ -135,7 +134,7 @@
     position: absolute;
     bottom: 10%;
     right: 10%;
-    font-family: 'Akzidenz-grotesk-light';
+    font-family: 'Oswald';
   }
 
   .program__content--winter-season {

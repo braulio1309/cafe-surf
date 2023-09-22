@@ -35,8 +35,7 @@
       font-family: 'Oswald';
 
       @media screen and (min-width: 64rem) {
-        font-size: 30pt;
-        line-height: 45.6pt;
+        font-size: 18pt;
       }
 
       @media screen and (min-width: 85.375rem) {

@@ -22,11 +22,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem;
     gap: calc(5.5302rem / 5);
-
+    margin:20px;
     @media screen and (min-width: 64rem) {
       gap: 2rem;
+      padding-left: 15rem;
     }
   }
 
@@ -42,12 +42,10 @@
   }
 
   .cafe-surf__title {
-    font-size: calc(85pt / 5);
     color: #05386B;
-
-
     @media screen and (min-width: 64rem) {
-      font-size: 85pt;
+      font-size: 45pt;
+      font-family: 'Oswald ExtraLight' !important;
     }
   }
 
@@ -56,7 +54,6 @@
   }
 
   .cafe-surf__subtitle {
-    font-size: 1rem;
 
     @media screen and (min-width: 64rem) {
       font-size: 16pt;
@@ -83,7 +80,7 @@
     flex-direction: column;
     max-width: min(75.5788%, 90.6946rem);
     gap: 2rem;
-    font-size: calc(16pt / 3);
+    font-size: 22pt;
     line-height: 160%;
 
     &:nth-child(odd) {
@@ -92,18 +89,23 @@
 
     @media screen and (min-width: 64rem) {
       flex-direction: row;
-      font-size: 16pt;
+      font-size: 21pt;
 
       &:nth-child(odd) {
         flex-direction: row;
       }
     }
   }
+  .collaboration__text {
+    font-size: 16pt;
+  }
 
   .collaboration__watch {
     display: flex;
     gap: 1ch;
     font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     @media screen and (min-width: 64rem) {
       font-size: 13px;
     }
